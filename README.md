@@ -1,12 +1,11 @@
-## 構成
+## 構成
 
 - TypeScript
 - Webpack
 - TSLint
 - Prettier
 
-Lintのテンプレートは `tslint-config-standard` を利用しています。  
-jQueryの型定義ファイルをインストール済みです。
+Lintのテンプレートは `tslint-config-standard` を利用しています。
 
 ## インストール
 
@@ -32,4 +31,18 @@ $ npm run build
 
 ```
 $ npm run lint
+```
+
+## jQueryを使う場合
+
+インストール
+
+```
+$ npm install -D @types/jquery
+```
+
+使用方法
+
+```js
+import * as $ from 'jquery'
 ```
